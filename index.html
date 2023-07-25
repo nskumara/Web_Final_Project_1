@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Sri Lanka</title>
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style2.css">
+
+  
+</head>
+<body>
+  <!-- Navbar -->
+
+  <!-- Hero Section -->
+
+   <!-- Video Source -->
+  <!-- https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
+  <section class="showcase">
+
+    <header>
+
+      <div class="toggle menuToggle"></div>
+    </header>
+    <video src="video/video3.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+    <div class="text">
+      <img src="img/Flag_map_of_Sri_Lanka.svg" alt="" width="100px" height="100px" class="navbar-img">
+      <img src="img/logo-no-background2.svg" alt="" width="400px" height="100px" class="navbar-img">
+      <h2>Never Stop</h2> 
+      <h3>Exploring The World</h3>
+      <p>Sri Lanka is a beautiful island nation located in the Indian Ocean. It is home to a rich history and culture, stunning beaches, lush rainforests, and ancient ruins. Whether you are interested in history, nature, or culture, Sri Lanka has something to offer everyone.
+
+        This website is your guide to all things Sri Lanka. We will help you plan your trip, find the best places to visit, and learn about the local culture. We also have a comprehensive section on Sri Lankan food, so you can be sure to experience the best of Sri Lankan cuisine.
+        
+        So what are you waiting for? Start planning your trip to Sri Lanka today!</p>
+      <a href="destination.html">Explore</a>
+    </div>
+    
+    <ul class="social">
+      <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+      <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+      <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+    </ul>
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="destination.html">Destination</a></li>
+	  <li><a href="videos.html">Videos</a></li>
+      <li><a href="history.html">History</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  
+  
+  <!-- Bootstrap JS -->
+  <!-- Custom JS -->
+  <script>
+ const menuToggle = document.querySelector('.menuToggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+</script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  position: relative;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #f0f0f0;
+}
+
+* {
+    box-sizing: border-box
+}
+.image-slideshow {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.image-slideshow img {
+  width: 50%
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 1}
+}
+
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.about-section {
+  text-align: justify;
+}
+
+.about-section h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.about-section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  background-color: #ffc107; /* Add a background color to the h2 headings */
+  color: #fff; /* Set the text color to white for better contrast */
+  padding: 8px 12px; /* Add padding to increase the visual appeal */
+  border-radius: 8px; /* Round the corners for a softer look */
+  font-weight: bold; /* Make the text bold for emphasis */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+}

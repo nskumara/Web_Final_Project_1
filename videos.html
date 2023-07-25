@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tourism Website - Destinations</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <!-- Animate CSS animate.style.com-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<style>
+
+body{
+  height: 100vh;
+  background: linear-gradient(
+    to right,
+    #DBF1F7 0%,
+    #DBF1F7 40%,
+    white 40%,
+    white 100%); 
+}
+
+.temp1 {
+	padding-left: 15px;
+	padding-right: 15px;
+	transition: 1s;
+}
+
+.temp1:hover {
+	transform:scale(1.1);
+	z-index:2;
+}
+
+
+.img1{
+	width: 100%;
+	margin-top:150px;
+	max-height: 500px;
+	border-radius: 0 15px 0 15px;
+	box-shadow: 6px 8px 25px -3px #30ADD0;
+}
+
+.img2{
+	width: 100%;
+	margin-top:60px;
+	max-height: 500px;
+	border-radius: 0 15px 0 15px;
+	box-shadow: 6px 8px 25px -3px #30ADD0;
+}
+ 
+.container{
+	position: relative;
+    z-index: 999;
+	max-height: 550px;
+}
+
+
+.container2{
+	padding: 60px 60px 30px 60px; /*top right bottom left*/
+    min-height: 41vh;
+    width: 100%;
+    /*margin: 2rem auto;*/
+	display: flex;
+	justify-content: center;
+
+}
+
+.box{
+	height:354px;
+	/*border: 2px solid aqua;*/
+	width: 420px;
+	margin-bottom: -23%;
+}
+
+.box3{
+	height:560px;
+	width: 370px;
+}
+
+.title1{
+	text-align:center;
+	font-family: 'Oswald', sans-serif;
+	font-size:5rem;
+	color:#30ADD0;
+	padding-left: 20px;
+	padding-top: 35px;
+}
+
+
+.ele2{
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+	text-align: justify;
+	padding-top: 32px;
+}
+
+.n-text{
+	font-weight: 485;
+	text-align: justify;
+}
+
+.footer{
+	padding-top: 185px;
+
+}
+
+
+
+
+/*------------------------------------*/
+
+@media (max-width: 575px) {
+
+body{
+  height: 100vh;
+  background: linear-gradient(
+    to right,
+    #DBF1F7 0%,
+    #DBF1F7 40%,
+    white 40%,
+    white 100%); 
+}
+
+.img1{
+	width: 100%;
+	padding-top:50px;
+	max-height: 500px;
+}
+
+.img2{
+	width: 100%;
+	padding-top:50px;
+	max-height: 500px;
+	
+}
+ 
+.container{
+	position: relative;
+    z-index: 999;
+	max-height: 550px;
+}
+
+
+.container2{
+	padding: 60px 60px 30px 60px; /*top right bottom left*/
+    min-height: 41vh;
+    width: 100%;
+    /*margin: 2rem auto;*/
+	/*display: flex;*/
+	justify-content: center;
+
+}
+
+.box{
+	height:175px;
+	/*border: 2px solid aqua;*/
+	width: 370px;
+	top: 1400px
+}
+
+.box3{
+	/*height:1100px;*/
+	width: 370px;
+}
+
+.title1{
+	text-align:center;
+	font-family: 'Oswald', sans-serif;
+	font-size:3rem;
+	color:#30ADD0;
+	padding-left: 20px;
+	padding-top: 35px;
+}
+	
+.col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+	
+.ele2{
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+	text-align: justify;
+	padding-top: 10px;
+	font-size: 0.8rem
+	
+}
+ 
+/*------------------------------------*/
+  
+ </style>
+ 
+<body>
+
+  
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #fff;">
+  <div class="container-fluid">
+    <img src="img/Flag_map_of_Sri_Lanka.svg" alt="" width="100px" height="70px"><br><img src="img/logo-no-background.svg" alt="" width="300px" height="100px"><!--<span style="color:#0000FF">SRI</span><span style="color:#00FF00"> LANKAN</span><span style="color:#FF0000"> GUIDE</span>-->
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link btn btn-pill" href="index.html" data-toggle="tooltip" data-placement="bottom" title="Home" data-animation="fadeIn">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-pill" href="destination.html" data-toggle="tooltip" data-placement="bottom" title="Destinations" data-animation="fadeIn">Destinations</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link btn btn-pill" href="history.html" data-toggle="tooltip" data-placement="bottom" title="About" data-animation="fadeIn">History</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link btn btn-pill" href="videos.html" data-toggle="tooltip" data-placement="bottom" title="About" data-animation="fadeIn">Videos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-pill" href="about.html" data-toggle="tooltip" data-placement="bottom" title="About" data-animation="fadeIn">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-pill" href="contact.html" data-toggle="tooltip" data-placement="bottom" title="Contact" data-animation="fadeIn">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="Layout-main">
+
+<!-- Photos Grid-->
+<div class="container">
+	<div class="row position-relative">
+		<div class="col-md-3 temp1">
+		<img src="img/history/h_img1.jpg" class="img1">
+		</div> 
+		
+		<div class="col-md-3 temp1">
+		<img src="img/history/h_img2.jpg" class="img2">
+		</div> 
+		
+		<div class="col-md-3 temp1">
+		<img src="img/history/h_img3.jpg" class="img1">
+		</div> 
+		
+		<div class="col-md-3 temp1">
+		<img src="img/history/h_img4.jpg" class="img2">
+		</div> 
+	</div> 
+</div>
+
+<!-- layout -->
+
+ <div class="container2">
+    <div class="layout-left">
+	<div class="row position-relative">
+        <div class="row">	  
+			<div class="col-md-12 box ele1">
+				<h1 class="title1 animate__animated animate__pulse" >Sri Lanka Videos Gallery</h1>
+			</div>
+			<div class="col-md-12 box ele2">
+				<p class="ele2" >Discover the mesmerizing beauty of Sri Lanka through our curated collection of captivating videos. Immerse yourself in the enchanting landscapes, cultural festivities, and thrilling adventures that this tropical paradise has to offer.
+				<br>
+				<br>			
+				From the pristine beaches that stretch for miles to the lush green tea plantations nestled in the hills, our videos will transport you to the heart of Sri Lanka's breathtaking scenery. Witness the vibrant local traditions and experience the warm hospitality of the Sri Lankan people as they celebrate their rich heritage.
+				<br>
+				<br>
+				Whether you're planning your next adventure or simply seeking inspiration, our Videos Gallery will leave you enchanted and eager to explore every corner of this vibrant island nation.
+				<br>
+				<br>
+				Sit back, relax, and let the beauty of Sri Lanka unfold before your eyes. Get ready for an unforgettable journey through our captivating Videos Gallery.
+				</p>
+			</div>
+
+<div class="container py-5">
+  <div class="row mt-5">
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="embed-responsive embed-responsive-16by9 video-thumbnail">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/NGoCQ3HyxQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="embed-responsive embed-responsive-16by9 video-thumbnail">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7h4wud3HMZQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="embed-responsive embed-responsive-16by9 video-thumbnail">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/vVrGJH13_hY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+    <!-- Add more video thumbnails here -->
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="embed-responsive embed-responsive-16by9 video-thumbnail">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jEEsmAAovuQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="embed-responsive embed-responsive-16by9 video-thumbnail">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/_8KFEmcA0gc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="embed-responsive embed-responsive-16by9 video-thumbnail">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZIEu-chk92E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="embed-responsive embed-responsive-16by9 video-thumbnail">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/liU5Jnie67o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="embed-responsive embed-responsive-16by9 video-thumbnail">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pKIT5Dd0kj8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="embed-responsive embed-responsive-16by9 video-thumbnail">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XijcrP-PDj8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+    
+  </div>			
+
+</section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container text-center">
+      <ul class="footer-links">
+        <li><a class="btn btn-pill" href="index.html">Home</a></li>
+          <li><a class="btn btn-pill" href="destination.html">Destinations</a></li>
+          <li><a class="btn btn-pill" href="videos.html">Videos</a></li>
+          <li><a class="btn btn-pill" href="history.html">History</a></li>
+          <li><a class="btn btn-pill" href="about.html">About Us</a></li>
+          <li><a class="btn btn-pill" href="contact.html">Contact</a></li>
+      </ul>
+      <ul class="social-links">
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+      </ul>
+      <img src="img/img1.png" alt="" class="footer-image">
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Custom JS -->
+  <script>
+    $(document).ready(function() {
+      // Add background animation
+      $(".hero").addClass("animated-background");
+
+      // Card click animation
+      $(".destinations .card").click(function() {
+        $(this).addClass("animated-card");
+      });
+
+      // Button click animation
+      $(".btn-primary").click(function() {
+        $(this).addClass("animated-button");
+      });
+    });
+	
+	  <!-- Custom JS ToogleButton---->
+  
+</body>
+</html>

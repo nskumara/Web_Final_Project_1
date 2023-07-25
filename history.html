@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tourism Website - Destinations</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <!-- Animate CSS animate.style.com-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<style>
+
+body{
+  height: 100vh;
+  background: linear-gradient(
+    to right,
+    #DBF1F7 0%,
+    #DBF1F7 40%,
+    white 40%,
+    white 100%); 
+}
+
+.temp1 {
+	padding-left: 15px;
+	padding-right: 15px;
+	transition: 1s;
+}
+
+.temp1:hover {
+	transform:scale(1.1);
+	z-index:2;
+	
+}
+
+
+.img1{
+	width: 100%;
+	margin-top:150px;
+	max-height: 500px;
+	border-radius: 0 15px 0 15px;
+	box-shadow: 6px 8px 25px -3px #30ADD0;
+}
+
+.img2{
+	width: 100%;
+	margin-top:60px;
+	max-height: 500px;
+	border-radius: 0 15px 0 15px;
+	box-shadow: 6px 8px 25px -3px #30ADD0;
+}
+ 
+.container{
+	position: relative;
+    z-index: 999;
+	max-height: 550px;
+}
+
+
+.container2{
+	padding: 60px 60px 30px 60px; /*top right bottom left*/
+    min-height: 41vh;
+    width: 100%;
+    /*margin: 2rem auto;*/
+	display: flex;
+	justify-content: center;
+
+}
+
+.box{
+	height:350px;
+	/*border: 2px solid aqua;*/
+	width: 370px;
+}
+
+.box3{
+	/*height:1100px;*/
+	width: 370px;
+}
+
+.title1{
+	text-align:center;
+	font-family: 'Oswald', sans-serif;
+	font-size:6rem;
+	color:#30ADD0;
+	padding-left: 20px;
+	padding-top: 35px;
+}
+
+.ele2{
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+	text-align: justify;
+	padding-top: 10px;
+}
+
+.n-text{
+	font-weight: 485;
+	text-align: justify;
+}
+
+/* Button Explore More start */
+
+.buttonex {
+  display: inline-block;
+  background-color: #30ADD0;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 12px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-left: 2px;
+  margin-top:20px;
+  border-radius: 0 8px 0 8px;
+}
+
+.buttonex:focus {
+  outline: none;
+}
+
+.buttonex span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  z-index: 9;
+}
+
+.buttonex span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buttonex:hover span {
+  padding-right: 25px;
+}
+
+.buttonex:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* Style the checkbox to hide it */
+
+#expand-checkbox {
+	display: none;
+}
+
+/* Style the additional content and hide it by default */
+
+.content1 {
+	display: none;
+	padding-top: 58px;
+}
+
+/* When the checkbox is checked, show the additional content */
+
+#expand-checkbox:checked ~ .content1 {
+    display: block;
+}
+
+.ele3{
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+	text-align: left;
+	padding-top: 56px;
+	z-index: 8;
+}
+
+.footern{
+	padding: 8px 0;
+}
+/*------------------------------------*/
+
+@media (max-width: 575px) {
+
+body{
+  height: 100vh;
+  background: linear-gradient(
+    to right,
+    #DBF1F7 0%,
+    #DBF1F7 40%,
+    white 40%,
+    white 100%); 
+}
+
+.img1{
+	width: 100%;
+	padding-top:50px;
+	max-height: 500px;
+}
+
+.img2{
+	width: 100%;
+	padding-top:50px;
+	max-height: 500px;
+	
+}
+ 
+.container{
+	position: relative;
+    z-index: 999;
+	max-height: 550px;
+}
+
+
+.container2{
+	padding: 60px 60px 30px 60px; /*top right bottom left*/
+    min-height: 41vh;
+    width: 100%;
+    /*margin: 2rem auto;*/
+	display: flex;
+	justify-content: center;
+
+}
+
+.box{
+	height:175px;
+	/*border: 2px solid aqua;*/
+	width: 370px;
+	top: 1400px
+}
+
+.box3{
+	/*height:1100px;*/
+	width: 370px;
+}
+
+.title1{
+	text-align:center;
+	font-family: 'Oswald', sans-serif;
+	font-size:3rem;
+	color:#30ADD0;
+	padding-left: 20px;
+	padding-top: 35px;
+}
+	
+.col-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+	
+.ele2{
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+	text-align: justify;
+	padding-top: 10px;
+	font-size: 0.8rem
+	
+}
+
+/* Button Explore More start */
+
+.buttonex {
+  display: inline-block;
+  background-color: #30ADD0;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 12px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-left: 100px;
+  margin-top:20px;
+}
+
+
+.buttonex span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  z-index: 999;
+}
+
+
+/* Style the additional content and hide it by default */
+
+.content1 {
+	display: none;
+}
+
+.ele3{
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+	text-align: left;
+	padding-top: 1600px;
+}
+}
+  
+/*------------------------------------*/
+  
+ </style>
+ 
+<body>
+
+  
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #fff;">
+  <div class="container-fluid">
+    <img src="img/Flag_map_of_Sri_Lanka.svg" alt="" width="100px" height="70px"><br><img src="img/logo-no-background.svg" alt="" width="300px" height="100px"><!--<span style="color:#0000FF">SRI</span><span style="color:#00FF00"> LANKAN</span><span style="color:#FF0000"> GUIDE</span>-->
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link btn btn-pill" href="index.html" data-toggle="tooltip" data-placement="bottom" title="Home" data-animation="fadeIn">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-pill" href="destination.html" data-toggle="tooltip" data-placement="bottom" title="Destinations" data-animation="fadeIn">Destinations</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link btn btn-pill" href="history.html" data-toggle="tooltip" data-placement="bottom" title="History" data-animation="fadeIn">History</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link btn btn-pill" href="videos.html" data-toggle="tooltip" data-placement="bottom" title="Videos" data-animation="fadeIn">Videos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-pill" href="about.html" data-toggle="tooltip" data-placement="bottom" title="About" data-animation="fadeIn">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-pill" href="contact.html" data-toggle="tooltip" data-placement="bottom" title="Contact" data-animation="fadeIn">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="Layout-main">
+
+<!-- Photos Grid-->
+<div class="container">
+	<div class="row position-relative">
+		<div class="col-md-3 temp1">
+		<img src="img/history/h_img1.jpg" class="img1">
+		</div> 
+		
+		<div class="col-md-3 temp1">
+		<img src="img/history/h_img2.jpg" class="img2">
+		</div> 
+		
+		<div class="col-md-3 temp1">
+		<img src="img/history/h_img3.jpg" class="img1">
+		</div> 
+		
+		<div class="col-md-3 temp1">
+		<img src="img/history/h_img4.jpg" class="img2">
+		</div> 
+	</div> 
+</div>
+
+
+<!-- layout -->
+
+ <div class="container2">
+    <div class="layout-left">
+	<div class="row position-relative">
+        <div class="row">	  
+			<div class="col-6 box ele1">
+			<h1 class="title1 animate__animated animate__pulse" >History of Sri Lanka</h1>
+			</div>
+			<div class="col-6 box ele2">
+			<p class="ele2" >Sri Lanka, an island nation in the Indian Ocean, boasts a captivating history stretching back thousands of years, encompassing ancient civilizations and colonial influences. 
+			<br>
+			<br>			
+			As a crossroads of maritime trade, it welcomed travelers and traders from around the world, fostering a vibrant exchange of cultures and ideas, more further enriching its fascinating historical journey.</p>
+			
+			<label for="expand-checkbox">
+			<button class="buttonex" style="vertical-align:middle"><span id="button-text">READ MORE</span></button>
+			</label>
+			<input type="checkbox" id="expand-checkbox">
+			</div>
+			<div class="col ele3 box3 content-add">
+				<div class="content1" >
+				Prehistoric Roots
+				<br>
+				<br>
+				<p class="n-text animate__animated animate__bounce">The earliest traces of human habitation in Sri Lanka date back to prehistoric times, with evidence of settlements dating as far back as 125,000 years ago. Archaeological discoveries, such as Balangoda Man, have shed light on the island's early inhabitants and their way of life.</p>
+				<br>
+				The Ancient Kingdoms
+				<br>
+				<br>
+				<p class="n-text animate__animated animate__bounce">Sri Lanka was home to several ancient kingdoms, each leaving behind remarkable monuments and cultural heritage. Among the most prominent were the Anuradhapura, Polonnaruwa, and Sigiriya kingdoms. The city of Anuradhapura, founded around the 4th century BCE, became a renowned center of Buddhism and is home to the sacred Bodhi tree, believed to be a sapling from the original tree under which Buddha attained enlightenment.</p>
+				<br>
+				Arrival of Buddhism
+				<br>
+				<br>
+				<p class="n-text animate__animated animate__bounce">One of the most significant events in Sri Lanka's history was the introduction of Buddhism in the 3rd century BCE. Buddhism played a pivotal role in shaping the island's culture, art, and architecture. Many ancient stupas, dagobas, and monastic complexes were constructed during this period and remain important religious sites today.</p>
+				<br>
+				Colonial Influences
+				<br>
+				<br>
+				<p class="n-text animate__animated animate__bounce">Over the centuries, Sri Lanka became a strategic trading hub and caught the attention of various foreign powers. The island experienced periods of colonial rule, with the Portuguese, Dutch, and British leaving their imprints on the country. The Portuguese arrived in the 16th century, followed by the Dutch in the 17th century. Eventually, the British took control in the early 19th century and held dominion until Sri Lanka gained independence in 1948.</p>
+				<br>
+				Independence and Modern Sri Lanka
+				<br>
+				<br>
+				<p class="n-text animate__animated animate__bounce">After gaining independence, Sri Lanka embarked on a journey of self-determination and nation-building. The country made strides in various sectors, including education, infrastructure, and healthcare. Sri Lanka emerged as a vibrant democracy, blending its ancient traditions with modern developments.</p>
+				<br>
+				Historical Landmarks and UNESCO World Heritage Sites
+				<br>
+				<br>
+				<p class="n-text animate__animated animate__bounce">Visitors to Sri Lanka have the opportunity to explore a wealth of historical landmarks and UNESCO World Heritage Sites. The ancient cities of Anuradhapura and Polonnaruwa, the rock fortress of 	Sigiriya, and the sacred city of Kandy are just a few examples of the nation's historical treasures.</p>
+				<br>
+				Today, Sri Lanka stands as a testament to its enduring history, welcoming travelers from around the world to experience its unique cultural tapestry and awe-inspiring historical sites.</p>			
+				</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+
+</section>
+
+  <!-- Footer -->
+  <footer class="footer footern">
+    <div class="container text-center">
+      <ul class="footer-links">
+			<li><a class="btn btn-pill" href="index.html">Home</a></li>
+			<li><a class="btn btn-pill" href="destination.html">Destinations</a></li>
+			<li><a class="btn btn-pill" href="videos.html">Videos</a></li>
+			<li><a class="btn btn-pill" href="history.html">History</a></li>
+			<li><a class="btn btn-pill" href="about.html">About Us</a></li>
+			<li><a class="btn btn-pill" href="contact.html">Contact</a></li>
+      </ul>
+      <ul class="social-links">
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+      </ul>
+      <img src="img/img1.png" alt="" class="footer-image">
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Custom JS -->
+  <script>
+    $(document).ready(function() {
+      // Add background animation
+      $(".hero").addClass("animated-background");
+
+      // Card click animation
+      $(".destinations .card").click(function() {
+        $(this).addClass("animated-card");
+      });
+
+      // Button click animation
+      $(".btn-primary").click(function() {
+        $(this).addClass("animated-button");
+      });
+    });
+	
+	  <!-- Custom JS ToogleButton---->
+
+  // JavaScript to toggle the checkbox state and show/hide the additional content
+  const button = document.querySelector('.buttonex');
+  const checkbox = document.querySelector('#expand-checkbox');
+  const contentAdd = document.querySelector('.content1');
+
+  button.addEventListener('click', () => {
+    if (checkbox.checked) {
+      checkbox.checked = false;
+      contentAdd.style.display = 'none';
+      document.getElementById('button-text').textContent = 'READ MORE';
+    } else {
+      checkbox.checked = true;
+      contentAdd.style.display = 'block';
+      document.getElementById('button-text').textContent = 'READ LESS';
+    }
+  });
+</script>
+  
+</body>
+</html>

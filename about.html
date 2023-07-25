@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tourism Website - Destinations</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <!-- Animate CSS animate.style.com-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<style>
+
+body{
+  height: 100vh;
+  background: linear-gradient(
+    to right,
+    #DBF1F7 0%,
+    #DBF1F7 40%,
+    white 40%,
+    white 100%); 
+}
+
+.temp1 {
+	padding-left: 15px;
+	padding-right: 15px;
+	transition: 1s;
+}
+
+.temp1:hover {
+	transform:scale(1.1);
+	z-index:2;
+}
+
+
+.img1{
+	width: 100%;
+	margin-top:150px;
+	max-height: 500px;
+	border-radius: 0 15px 0 15px;
+	box-shadow: 6px 8px 25px -3px #30ADD0;
+}
+
+.img2{
+	width: 100%;
+	margin-top:60px;
+	max-height: 500px;
+	border-radius: 0 15px 0 15px;
+	box-shadow: 6px 8px 25px -3px #30ADD0;
+}
+ 
+.container{
+	position: relative;
+    z-index: 999;
+	max-height: 100%;
+}
+
+
+.container2{
+	padding: 60px 60px 30px 60px; /*top right bottom left*/
+    min-height: 145vh;
+    width: 100%;
+    /*margin: 2rem auto;*/
+	display: flex;
+	justify-content: center;
+
+}
+
+.box{
+	height:354px;
+	/*border: 2px solid aqua;*/
+	width: 420px;
+	margin-bottom: -30%;
+}
+
+.box1{
+	height:100%x;
+	/*border: 2px solid aqua;*/
+	width: 700px;
+	margin-bottom: -22%;
+}
+
+.title1{
+	text-align:center;
+	font-family: 'Oswald', sans-serif;
+	font-size:5rem;
+	color:#30ADD0;
+	padding-left: 20px;
+	padding-top: 35px;
+}
+
+
+.ele2{
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+	text-align: justify;
+	padding-top: 32px;
+}
+
+.ele3{
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+	text-align: justify;
+	padding-top: 125px;
+  padding-bottom: 0px;
+}
+
+.n-text{
+	font-weight: 485;
+	text-align: justify;
+}
+
+.heading-01{
+  text-align: center;
+  background-color: #30add073;
+  opacity: 0.8;
+  padding: 5px 5px 5px 5px;
+  margin-bottom: 25px;
+  border-radius: 0 15px 0 15px;
+  box-shadow: 8px 10px 16px -7px #124d5e;
+ 
+}
+
+/*------------------------------------*/
+
+@media (max-width: 575px) {
+
+body{
+  height: 100vh;
+  background: linear-gradient(
+    to right,
+    #DBF1F7 0%,
+    #DBF1F7 40%,
+    white 40%,
+    white 100%); 
+}
+
+.img1{
+	width: 100%;
+	padding-top:50px;
+	max-height: 500px;
+}
+
+.img2{
+	width: 100%;
+	padding-top:50px;
+	max-height: 500px;
+	
+}
+ 
+.container{
+	position: relative;
+    z-index: 999;
+	max-height: 550px;
+}
+
+
+.container2{
+	padding: 60px 60px 30px 60px; /*top right bottom left*/
+    min-height: 41vh;
+    width: 100%;
+    /*margin: 2rem auto;*/
+	/*display: flex;*/
+	justify-content: center;
+
+}
+
+.box{
+	height:175px;
+	/*border: 2px solid aqua;*/
+	width: 370px;
+	top: 1400px
+}
+
+.box3{
+	/*height:1100px;*/
+	width: 370px;
+}
+
+.title1{
+	text-align:center;
+	font-family: 'Oswald', sans-serif;
+	font-size:3rem;
+	color:#30ADD0;
+	padding-left: 20px;
+	padding-top: 35px;
+}
+	
+.col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+	
+.ele2{
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+	text-align: justify;
+	padding-top: 10px;
+	font-size: 0.8rem
+	
+}
+ 
+/*------------------------------------*/
+  
+ </style>
+ 
+<body>
+
+  
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #fff;">
+  <div class="container-fluid">
+    <img src="img/Flag_map_of_Sri_Lanka.svg" alt="" width="100px" height="70px"><br><img src="img/logo-no-background.svg" alt="" width="300px" height="100px"><!--<span style="color:#0000FF">SRI</span><span style="color:#00FF00"> LANKAN</span><span style="color:#FF0000"> GUIDE</span>-->
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link btn btn-pill" href="index.html" data-toggle="tooltip" data-placement="bottom" title="Home" data-animation="fadeIn">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-pill" href="destination.html" data-toggle="tooltip" data-placement="bottom" title="Destinations" data-animation="fadeIn">Destinations</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link btn btn-pill" href="history.html" data-toggle="tooltip" data-placement="bottom" title="About" data-animation="fadeIn">History</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link btn btn-pill" href="videos.html" data-toggle="tooltip" data-placement="bottom" title="About" data-animation="fadeIn">Videos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-pill" href="about.html" data-toggle="tooltip" data-placement="bottom" title="About" data-animation="fadeIn">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-pill" href="contact.html" data-toggle="tooltip" data-placement="bottom" title="Contact" data-animation="fadeIn">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="Layout-main">
+
+<!-- Photos Grid-->
+<div class="container">
+	<div class="row position-relative">
+		<div class="col-md-3 temp1">
+		<img src="img/history/h_img1.jpg" class="img1">
+		</div> 
+		
+		<div class="col-md-3 temp1">
+		<img src="img/history/h_img2.jpg" class="img2">
+		</div> 
+		
+		<div class="col-md-3 temp1">
+		<img src="img/history/h_img3.jpg" class="img1">
+		</div> 
+		
+		<div class="col-md-3 temp1">
+		<img src="img/history/h_img4.jpg" class="img2">
+		</div> 
+	</div> 
+</div>
+
+<!-- layout -->
+
+ <div class="container2">
+    <div class="layout-left">
+	<div class="row position-relative">
+        <div class="row">	  
+			<div class="col-md-12 col-sm-12 box ele1">
+				<h1 class="title1 animate__animated animate__pulse" >About Us</h1>
+			</div>
+			<div class="col-md-12 col-sm-12 box1 ele2">
+				<p class="ele3">We are dedicated to bringing you the wonders of the world through our innovative platform. With a passion for exploration and a commitment to excellence, we strive to provide you with an extraordinary experience that will leave you inspired and captivated.
+				<br>
+				<br>
+        <p class="heading-01">Our Mission</p>
+				Our mission is to be the ultimate destination for curious minds and adventurous spirits. We believe that the world is a treasure trove of beauty and diversity, and we aim to showcase its marvels in all their splendor. Through our project, we want to foster a sense of wanderlust and promote cultural understanding, connecting people from different walks of life through shared experiences.
+				<br>
+				<br>
+        <p class="heading-01">Discover the World</p>
+				Prepare to embark on a journey like no other! Our platform offers a vast collection of destinations, each carefully curated to present the finest sights, sounds, and tastes the world has to offer. From ancient wonders to modern marvels, from breathtaking landscapes to bustling cities, our project is your gateway to exploring the globe.
+				<br>
+        <br>
+        <p class="heading-01">Embrace Cultural Richness</p>
+				We are passionate about celebrating cultural diversity. Our project provides a window into the traditions, customs, and heritage of communities around the world. Immerse yourself in the colors of festivals, savor the flavors of local cuisines, and learn about the captivating stories that shape different societies.
+				<br>
+				<br>
+        <p class="heading-01">Unforgettable Adventures</p>
+        For the adventurous souls seeking thrills and excitement, look no further! Our project is your playground for adrenaline-pumping activities and unforgettable escapades. Whether you're climbing majestic mountains, diving into the depths of the ocean, or trekking through dense jungles, we have something extraordinary in store for you.
+				<br>
+				<br>
+        <p class="heading-01">Travel with Purpose</p>
+         At Our Project, we believe in responsible and sustainable travel. We are committed to minimizing our ecological footprint and supporting local communities. By traveling with purpose, you can leave a positive impact on the places you visit, preserving their beauty for generations to come.
+				<br>
+				<br>
+        <p class="heading-01">Join the Journey</p>
+        The world is an open invitation, and we invite you to be part of this grand adventure. Join us as we navigate the globe's wonders, unravel its mysteries, and embrace its diversity. Our project is your passport to unforgettable memories and life-changing experiences.
+				<br>
+				<br>
+        <p class="heading-01">Let's Explore Together</p>
+        Together, let's venture into the unknown, broaden our horizons, and create cherished memories that will last a lifetime. Our team is devoted to making your journey seamless and unforgettable, and we're excited to be part of your travel story.</p>
+        <br>
+				<p><b>Come, let's explore, discover, and celebrate the beauty of our world through the lens of Our site!</b></p>
+				
+			</div>
+
+</section>
+
+  <!-- Footer -->
+  <footer class="footer footernn">
+    <div class="container text-center">
+      <ul class="footer-links">
+        <li><a class="btn btn-pill" href="index.html">Home</a></li>
+          <li><a class="btn btn-pill" href="destination.html">Destinations</a></li>
+          <li><a class="btn btn-pill" href="videos.html">Videos</a></li>
+          <li><a class="btn btn-pill" href="history.html">History</a></li>
+          <li><a class="btn btn-pill" href="about.html">About Us</a></li>
+          <li><a class="btn btn-pill" href="contact.html">Contact</a></li>
+      </ul>
+      <ul class="social-links">
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+      </ul>
+      <img src="img/img1.png" alt="" class="footer-image">
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Custom JS -->
+  <script>
+    $(document).ready(function() {
+      // Add background animation
+      $(".hero").addClass("animated-background");
+
+      // Card click animation
+      $(".destinations .card").click(function() {
+        $(this).addClass("animated-card");
+      });
+
+      // Button click animation
+      $(".btn-primary").click(function() {
+        $(this).addClass("animated-button");
+      });
+    });
+	
+	  <!-- Custom JS ToogleButton---->
+  
+</body>
+</html>

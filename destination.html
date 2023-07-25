@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tourism Website - Destinations</title>
+  <link rel="stylesheet" href="css/styles_i.css">
+  <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+ 	
+</head>
+<body>
+
+	<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #fff;">
+	<div class="container-fluid">
+	<a class="navbar-brand topic" href="#"></a>
+	  <img src="img/Flag_map_of_Sri_Lanka.svg" alt="" width="100px" height="70px"><br>
+	  <img src="img/logo-no-background.svg" alt="" width="300px" height="100px">
+	</a>
+	  <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+		<ul class="navbar-nav ml-auto">
+		  <li class="nav-item">
+			<a class="nav-link btn btn-pill" href="index.html" data-toggle="tooltip" data-placement="bottom" title="Home" data-animation="fadeIn">Home</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link btn btn-pill" href="destination.html" data-toggle="tooltip" data-placement="bottom" title="Destinations" data-animation="fadeIn">Destinations</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link btn btn-pill" href="videos.html" data-toggle="tooltip" data-placement="bottom" title="Contact" data-animation="fadeIn">Videos</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link btn btn-pill" href="history.html" data-toggle="tooltip" data-placement="bottom" title="About" data-animation="fadeIn">History</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link btn btn-pill" href="about.html" data-toggle="tooltip" data-placement="bottom" title="About" data-animation="fadeIn">About Us</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link btn btn-pill" href="contact.html" data-toggle="tooltip" data-placement="bottom" title="Contact" data-animation="fadeIn">Contact</a>
+		  </li>
+		</ul>
+	  </div>
+	</div>
+  </nav>
+  
+  <header>
+  
+  <h1 class="text-center mt-2 topic-n">Travel Destinations in Sri Lanka</h1>
+	<input type="text" class="form-control mt-3 mx-auto" id="searchInput" placeholder="Search here.." style="width:80%;">
+  </header>
+  <main>
+
+	<div class="flex-box">
+		<div class="card">
+		<img src="https://nexttravelsrilanka.com/wp-content/uploads/2021/07/Mountain-View-of-the-Illuminated-Adams-Peak.jpg">
+
+		<div class="container">
+			<h2 class="cap-text"><b>Adams peak</b></h2>
+			<p class="js-text">Adam’s Peak, mountain in southwestern Sri Lanka. It is 7,559 feet (2,304 metres) high and located 11 miles 
+			(18 km) northeast of Ratnapura, the capital of Sabaragamuwa province.<span class="dots">...</span><span class="more">  It is well known for the Sri Pada 
+			(Sinhala for “Sacred Footprint”), a hollow that is 67 inches (170 cm) long and 18 inches (46 cm) wide and 
+			resembles the print of a human foot. The Sri Pada is venerated by Buddhists, Hindus, Christians, and Muslims. 
+			Many pilgrims of all faiths visit the peak every year
+			
+			</p>
+			<button onclick="toggleDescription(this)" id="ReadMorebtn">Read more</button>
+			<br><br>
+			<button class="view-map"> 
+				<a href="https://www.google.com/maps/place/Sri+Pada+%2F+Adam's+Peak/@6.8096429,80.4993882,15z/data=!3m1!4b1!4m6!3m5!1s0x3ae3977589234b59:0x8723ad471d5b37dc!8m2!3d6.809643!4d80.4993882!16zL20vMDVncGM1!5m1!1e4?entry=ttu" target="_blank" class="view-map">
+					<img src="Images/dest.svg">
+				</a>
+			</button> 
+        
+		  </div>
+		</div>
+		
+		<div class="card">
+		<img src="https://i0.wp.com/srilankatravelbuddy.com/wp-content/uploads/2018/10/Jaya-Sri-Maha-Bodhi.jpg?resize=1080%2C694&ssl=1">
+
+		<div class="container">
+			<h2 class="cap-text"><b>Sri maha Bodhiya</b></h2>
+			<p class="js-text">Jaya Sri Maha Bodhi is a historical sacred bo tree (Ficus religiosa) in the Mahamewuna Garden in historical city 
+			of Anuradhapura, Sri Lanka.<span class="dots">...</span><span class="more"> This is believed to be a tree grown from a cutting of the southern branch from the historical
+			sacred bo tree, Sri Maha Bodhi, which was destroyed during the time of Emperor Ashoka the Great, at Buddha Gaya in India,
+			under which Siddhartha Gautama (Buddha) attained Enlightenment. 
+
+			</p>
+			<button onclick="toggleDescription(this)" id="ReadMorebtn">Read more</button>
+			<br><br>
+			<button class="view-map"> 
+				<a href="https://www.google.com/maps/place/Siri+Maha+Bodhi/@8.3448106,80.3972391,15z/data=!4m6!3m5!1s0x3afcf5bd6558bc7d:0x5ea683ac14a7ee54!8m2!3d8.3448106!4d80.3972391!16s%2Fm%2F0472ft3?entry=ttu" target="_blank" class="view-map">
+					<img src="Images/dest.svg">
+				</a>
+			</button> 
+        
+		  </div>
+		</div>
+		
+		<div class="card">
+		<img src="https://www.travelmapsrilanka.com/img/arugam-bay/the-best-surfing-destination-arugam-bay.jpg">
+
+		<div class="container">
+			<h2 class="cap-text"><b>Arugam bay</b></h2>
+			<p class="js-text">Arugam Bay (Tamil: அறுகம் குடா), known locally as "Arugam Kudah", is situated on the Indian Ocean in the dry zone of 
+			Sri Lanka's southeast coast, and <span class="dots">...</span><span class="more">a historic settlement of the ancient Batticaloa Territory (Mattakallappu Desam). 
+			The bay is located 117 kilometres (73 mi) south of Batticaloa, 320 kilometres (200 mi) due east of Colombo, 
+			and approximately 4 kilometres (2.5 mi) south of the market town of Pottuvil. 
+			
+			</p>
+			<button onclick="toggleDescription(this)" id="ReadMorebtn">Read more</button>
+			<br><br>
+			<button class="view-map"> 
+				<a href="https://www.google.com/maps/place/Arugam+Bay+Beach,+Sri+Lanka/data=!4m2!3m1!1s0x3ae5a2d27b6fafbf:0xc6efd6b59df5db34?sa=X&ved=2ahUKEwiGt_aV5aKAAxWwgVYBHREJC9EQ8gF6BAhaEAA&ved=2ahUKEwiGt_aV5aKAAxWwgVYBHREJC9EQ8gF6BAhhEAE" target="_blank" class="view-map">
+					<img src="Images/dest.svg">
+				</a>
+			</button>
+        
+		  </div>
+		</div>
+		
+		
+		<div class="card">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Bambarakanda_Waterfall.jpg">
+
+		<div class="container">
+			<h2 class="cap-text"><b>Bambarakanda falls</b></h2>
+			<p class="js-text">
+			Bambarakanda Falls is the tallest waterfall in Sri Lanka. With a height of 263 m, it ranks as the 461st highest waterfall
+			in the world. Situated in Kalupahana in the <span class="dots">...</span><span class="more">Badulla District, this waterfall is 5 km away from the A4 Highway. The waterfall was formed by Kuda Oya, which is a tributary of the Walawe River.
+			</p>
+			<button onclick="toggleDescription(this)" id="ReadMorebtn">Read more</button>
+			<br><br>
+			<button class="view-map"> 
+				<a href="https://www.google.com/maps/place/Bambarakanda+Falls/@6.7733517,80.8312138,15z/data=!4m2!3m1!1s0x0:0x6863b33a5baad25?sa=X&ved=2ahUKEwimpovh-6KAAxXLgFYBHXx7BhwQ_BJ6BAhwEAA&hl=en-GB&ved=2ahUKEwimpovh-6KAAxXLgFYBHXx7BhwQ_BJ6BAh6EAg" target="_blank" class="view-map">
+					<img src="Images/dest.svg">
+				</a>
+			</button>
+        
+		  </div>
+		</div>
+		
+		<div class="card">
+		<img src="https://assets.traveltriangle.com/blog/wp-content/uploads/2020/02/Dambulla-Cave-Temple_4th-jun.jpg">
+		<div class="container">
+			<h2 class="cap-text"><b>Dambulla</b></h2>
+			<p class="js-text">
+			It is hard to not be stunned by the beautiful murals and statues in this beautifully preserved cave with over
+			150 statues of Buddha. <span class="dots">...</span><span class="more">The Dambulla cave temple is one of the finest temples in Sri Lanka which is known for its unique architecture. Experience the peace and silene in this stunning cave temple that bear testimony to the extraordinary cultural artifacts in ancient Sri Lanka.
+			</p>
+			<button onclick="toggleDescription(this)" id="ReadMorebtn">Read more</button>
+			<br><br>
+			<button class="view-map"> 
+				<a href="https://www.google.com/maps/place/Dambulla+Royal+Cave+Temple+and+Golden+Temple/@7.8549141,80.6505699,15z/data=!4m2!3m1!1s0x0:0xd1daa5c0936b764c?sa=X&ved=2ahUKEwi7p_GF-aKAAxUXsVYBHa5HB4kQ_BJ6BAhlEAA&hl=en-GB&ved=2ahUKEwi7p_GF-aKAAxUXsVYBHa5HB4kQ_BJ6BAhzEAg" target="_blank" class="view-map">
+					<img src="Images/dest.svg">
+				</a>
+			</button>
+        
+		  </div>
+		</div>
+		
+		<div class="card">
+		<img src="https://assets.traveltriangle.com/blog/wp-content/uploads/2020/02/Ella_4th-jun.jpg">
+		<div class="container">
+			<h2 class="cap-text"><b>Ella</b></h2>
+			<p class="js-text">Get enamored by the stunning views through Ella Gap overlooking a spectacular gap in the southern mountain wall. 
+			Situated in the middle of beautiful countryside,<span class="dots">...</span><span class="more"> with small vegetable plots, tea plantations on the hill slopes and 
+			forests on the tops this hill station is nothing less than breathtaking. Ella undoubtedly, is one of the most beautiful places to visit in Sri Lanka.
+			
+			</p>
+			<button onclick="toggleDescription(this)" id="ReadMorebtn">Read more</button>
+			<br><br>
+			<button class="view-map"> 
+				<a href="https://www.google.com/maps/place/Ella,+Sri+Lanka/@6.865309,81.047347,15z/data=!3m1!4b1!4m6!3m5!1s0x3ae465955bc09a25:0xbdfadcdadec487fb!8m2!3d6.8666988!4d81.046553!16s%2Fm%2F0113hm8d?entry=ttu" target="_blank" class="view-map">
+					<img src="Images/dest.svg">
+				</a>
+			</button>
+        
+		  </div>
+		</div>
+		
+		<div class="card">
+		<img src="https://www.trawell.in/admin/images/upload/140958692Nuwara_Eliya_Harton_Plains.jpg">
+		<div class="container">
+			<h2 class="cap-text"><b>Horton Plains</b></h2>
+			<p class="js-text">The list of the best places to visit in Sri Lanka is incomplete without the mention of Horton Plains National park
+			. For those who enjoy being in nature<span class="dots">...</span><span class="more"> and love hiking should definitely make a trip down to the Horton Plains. The terminal point of hike is the world’s end from where you will get to enjoy the ethereal views. You will also find misty waterfalls, enchanting lakes, and a variety of flora-fauna in the park
+			</p>
+			<button onclick="toggleDescription(this)" id="ReadMorebtn">Read more</button>
+			<br><br>
+			<button class="view-map"> 
+				<a href="https://www.google.com/maps/place/Horton+Plains+National+Park/@6.809446,80.8023333,15z/data=!4m2!3m1!1s0x0:0xcebca89153777249?sa=X&ved=2ahUKEwj6mPiG9aKAAxUNf94KHTBZBkMQ_BJ6BAhfEAA&hl=en-GB&ved=2ahUKEwj6mPiG9aKAAxUNf94KHTBZBkMQ_BJ6BAh-EAg" target="_blank" class="view-map">
+					<img src="Images/dest.svg">
+				</a>
+			</button>
+        
+		  </div>
+		</div>
+		
+		<div class="card">
+		<img src="https://static.wixstatic.com/media/8df728_c4006044a94c42f5b9c7266e96953550~mv2.jpg/v1/fill/w_640,h_358,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/8df728_c4006044a94c42f5b9c7266e96953550~mv2.jpg">
+		<div class="container">
+			<h2 class="cap-text"><b>Jaffna</b></h2>
+			<p class="js-text">Looking for religious tourist places in Sri Lanka? This place is also called the city of temples in Sri Lanka,
+			as it has some of the most beautiful temples of Sri Lanka and<span class="dots">...</span><span class="more"> one of the best Sri lanka attractions for spiritual retreat.
+			The most visited temples of all in this place are the temple of Nallur Kovil. This temple has the most of the visitors always
+			and this is the most crowded of all temples. Other temples nearby too are visited by the people who come to visit this one.
+			Apart from these temples, the other center of attraction of this place is the Jaffna Fort. This fort is not just a beautiful 
+			monument to see but is also the symbol of the history of Sri Lanka.
+			</p>
+			<button onclick="toggleDescription(this)" id="ReadMorebtn">Read more</button>
+			<br><br>
+			<button class="view-map"> 
+				<a href="https://www.google.com/maps/place/jaffna/data=!4m2!3m1!1s0x3afe53fd7be66aa5:0xc7da0d9203baf512?sa=X&ved=2ahUKEwiFs7jz8qKAAxUMyGEKHf5yCaYQ8gF6BAgREAA&hl=en-GB&ved=2ahUKEwiFs7jz8qKAAxUMyGEKHf5yCaYQ8gF6BAgUEAE" target="_blank" class="view-map">
+					<img src="Images/dest.svg">
+				</a>
+			</button>
+        
+		  </div>
+		</div>
+		
+		<div class="card">
+		<img src="https://www.archaeology.lk/wp-content/uploads/2020/11/temple-sacred-tooth-relic-kandy-sri-lanka.jpg">
+		<div class="container">
+			<h2 class="cap-text"><b>Kandy</b></h2>
+			<p class="js-text">The Temple of the Sacred Tooth Relic or Sri Dalada Maligawa, is a Buddhist temple in Kandy, Sri Lanka.
+			It is located in the royal palace complex<span class="dots">...</span><span class="more"> of the former Kingdom of Kandy, which houses the relic of the tooth of the Buddha. Since ancient times, the relic has played an important role in local politics because it is believed that whoever holds the relic holds the governance of the country. The relic was historically held by Sinhalese kings. The temple of the tooth is a World Heritage Site mainly due to the temple and the relic.
+			</p>
+			<button onclick="toggleDescription(this)" id="ReadMorebtn">Read more</button>
+			<br><br>
+			<button class="view-map"> 
+				<a href="https://www.google.com/search?bih=651&biw=1366&rlz=1C1CHBD_enLK963LK963&hl=en-GB&tbs=lf:1,lf_ui:2&tbm=lcl&sxsrf=AB5stBh_4Hk5OENDo4G1dGZ-BtFsmItKDg:1690050635673&q=kandy+temple+of+tooth&rflfq=1&num=10&ved=2ahUKEwjSq6qe-aKAAxWuplYBHUJ-B6QQtgN6BAgcEAg#rlfi=hd:;si:;mv:[[7.2936384,80.64234909999999],[7.293088999999998,80.6412102]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:2" target="_blank" class="view-map">
+					<img src="Images/dest.svg">
+				</a>
+			</button>
+        
+		  </div>
+		</div>
+		
+		<div class="card">
+		<img src="https://www.biofin.org/sites/default/files/content/news_media/Screenshot%202564-08-02%20at%2010.14.55.png">
+		<div class="container">
+			<h2 class="cap-text"><b>Sigiriya</b></h2>
+			<p class="js-text">
+			Sigiriya or Sinhagiri (Lion Rock) is an ancient rock fortress located in the northern 
+			Matale District near the town of Dambulla<span class="dots">...</span><span class="more"> in the Central Province, Sri Lanka. It is a site of historical and archaeological significance that is dominated by a massive column of granite rock approximately 180 m (590 ft) high.
+			</p>
+			<button onclick="toggleDescription(this)" id="ReadMorebtn">Read more</button>
+			<br><br>
+			<button class="view-map"> 
+				<a href="https://www.google.com/search?sa=X&bih=651&biw=1366&rlz=1C1CHBD_enLK963LK963&hl=en-GB&tbs=lf:1,lf_ui:1&tbm=lcl&sxsrf=AB5stBjRgu7vxujNa7-7aqETQ8l4fluqbA:1690050256783&q=sigiriya&rflfq=1&num=10&ved=2ahUKEwi72NTp96KAAxX5pVYBHb2hB4AQtgN6BAhcEAg#rlfi=hd:;si:;mv:[[7.9574489999999996,80.7637359],[7.9496774,80.7512588]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:1" target="_blank" class="view-map">
+					<img src="Images/dest.svg">
+				</a>
+			</button>
+        
+		  </div>
+		</div>
+		
+		<div class="card">
+		<img src="https://www.lovidhu.com/uploads/posts/2021/05//sinharaja-forest-feserve-sri-lanka-945x630.jpg">
+		<div class="container">
+			<h2 class="cap-text"><b>Sinharaja</b></h2>
+			<p class="js-text">The list of the most beautiful places in Sri Lanka is incomplete without mentioning Sinharaja Forest Reserve.
+			If there is one thing in abundance in Sri lanka,<span class="dots">...</span><span class="more">  it is flora-fauna. The home of lions, Sinharaja Forest Reserve is a paradise for wildlife enthusiasts and nature lovers making it one of the top places to visit in Sri lanka. The reason why you should visit this place is that you will find a variety of endemic birds and mammals.</p>
+			<button onclick="toggleDescription(this)" id="ReadMorebtn">Read more</button>
+			<br><br>
+			<button class="view-map"> 
+				<a href="https://www.google.com/maps/search/Sinharaja/@6.3971068,80.4193045,13z/data=!3m1!4b1?entry=ttu" target="_blank" class="view-map">
+					<img src="Images/dest.svg">
+				</a>
+			</button>
+        
+		  </div>
+		</div>
+		
+		<div class="card">
+		<img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/27/a9/93/ed/view-of-bungalow.jpg?w=600&h=400&s=1">
+		<div class="container">
+			<h2 class="cap-text"><b>Tawalantenna</b></h2>
+			<p class="js-text">
+			A village in the central province of Sri Lanka, Tawalantenne is best known for St. Clair Falls. 
+			The mighty fall is one of the widest in Sri Lanka, and hence, <span class="dots">...</span><span class="more"> known as Little Niagra of Sri Lanka. The breathtaking beauty of the waterfall will make your heart burst with joy when you lay your eyes on it.
+			</p>
+			<button onclick="toggleDescription(this)" id="ReadMorebtn">Read more</button>
+			<br><br>
+			<button class="view-map"> 
+				<a href="https://www.google.com/maps/place/tawalantenne/data=!4m2!3m1!1s0x3ae3797158ea4141:0xfdabc52cdccc67ba?sa=X&ved=2ahUKEwjkzs-Z96KAAxWrgFYBHSIJDRMQ8gF6BAgREAA&hl=en-GB&ved=2ahUKEwjkzs-Z96KAAxWrgFYBHSIJDRMQ8gF6BAgUEAE" target="_blank" class="view-map">
+					<img src="Images/dest.svg">
+				</a>
+			</button>
+        
+		  </div>
+		</div>
+		
+		<div class="card">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Spiritual_16.jpg/1200px-Spiritual_16.jpg">
+		<div class="container">
+			<h2 class="cap-text"><b>Trincomalee</b></h2>
+			<p class="js-text">Do you want to explore a few uncommon places to visit in Sri Lanka? For the people who love water sports and want
+			to live underwater life, he or she can visit this place.<span class="dots">...</span><span class="more"> This beach is one of the ideal beaches of Sri Lanka. This has everything that a beach should ideally provide to its visitors. The best part about this beach is that it has some really amazing scuba diving instructors. Therefore, one can go and have the real underwater experience there in the nicest of the way. Apart from this, there are few temples around, so you can go and see them too.
+			</p>
+			<button onclick="toggleDescription(this)" id="ReadMorebtn">Read more</button>
+			<br><br>
+			<button class="view-map"> 
+				<a href="https://www.google.com/maps/place/trincomalee/data=!4m2!3m1!1s0x3afbbcb6902dbe27:0x7de76a7a331b0fbb?sa=X&ved=2ahUKEwiXq-H-86KAAxVcq1YBHZATAuIQ8gF6BAgREAA&ved=2ahUKEwiXq-H-86KAAxVcq1YBHZATAuIQ8gF6BAgUEAE" target="_blank" class="view-map">
+					<img src="Images/dest.svg">
+				</a>
+			</button>
+        
+		  </div>
+		</div>
+		
+		<div class="card">
+		<img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/0b/2a/7c.jpg">
+		<div class="container">
+			<h2 class="cap-text"><b>Udawalawe</b></h2>
+			<p class="js-text">If you want to get a sight of elephants in Sri Lanka, then put Udawalawe National Park on your list because 
+			it is hard not to notice an elephant here.<span class="dots">...</span><span class="more"> Located on the border of boundary of Sabaragamuwa and Uva, the national park was formed to provide home to the wild animals that were displaced during the construction of Udawalawe Reservoir on the Walawe River.
+			</p>
+			<button onclick="toggleDescription(this)" id="ReadMorebtn">Read more</button>
+			<br><br>
+			<button class="view-map"> 
+				<a href="https://www.google.com/maps/place/Udawalawe+National+Park+Safari/@6.4746288,80.876319,15z/data=!4m2!3m1!1s0x0:0xaf12e79ffbd980d7?sa=X&ved=2ahUKEwii9vzd9qKAAxUOmVYBHb18AnEQ_BJ6BAhjEAA&hl=en-GB&ved=2ahUKEwii9vzd9qKAAxUOmVYBHb18AnEQ_BJ6BQiAARAI" target="_blank" class="view-map">
+					<img src="Images/dest.svg">
+				</a>
+			</button>
+        
+		  </div>
+		</div>
+		
+		<div class="card">
+		<img src="https://assets.traveltriangle.com/blog/wp-content/uploads/2020/02/Yala-National-Park_4th-jun.jpg">
+		<div class="container">
+			<h2 class="cap-text"><b>Yaala National park</b></h2>
+			<p class="js-text">Get dazzled by the leopards at Yala National Park, home to one of the highest densities of leopard in 
+			the world. Full of grassy plains <span class="dots">...</span><span class="more">, forest, lagoons, and coastline, this National Park is no less than a 
+			big cat paradise. A complete package of natural beauty and heritage, Sri Lankan beautiful places will 
+			capture your heart and makes it one of the must visit places in Sri Lanka. A visit to all these gorgeous 
+			spots will make a trip an unforgettable experience. This place again comes in the list of the most visited places
+			of Sri Lanka. It is somewhat 200 km away from the town of Bentota.
+			</p>
+			<button onclick="toggleDescription(this)" id="ReadMorebtn">Read more</button>
+			<br><br>
+			<button class="view-map"> 
+				<a href="https://www.google.com/maps/place/Yala+National+Park/@6.4639613,81.4718847,15z/data=!4m2!3m1!1s0x0:0x3bb623d70b5a3314?sa=X&ved=2ahUKEwi02sDu8aKAAxXOVPUHHdYuC2oQ_BJ6BAhjEAA&ved=2ahUKEwi02sDu8aKAAxXOVPUHHdYuC2oQ_BJ6BAh3EAg" target="_blank" class="view-map">
+					<img src="Images/dest.svg">
+				</a>
+			</button>
+        
+		  </div>
+		</div>
+		
+		</div>
+  </main>
+    <!-- Footer -->
+	<footer class="footer">
+		<div class="container text-center">
+		  <ul class="footer-links">
+			<li><a class="btn btn-pill" href="index.html">Home</a></li>
+			<li><a class="btn btn-pill" href="destination.html">Destinations</a></li>
+			<li><a class="btn btn-pill" href="videos.html">Videos</a></li>
+			<li><a class="btn btn-pill" href="history.html">History</a></li>
+			<li><a class="btn btn-pill" href="about.html">About Us</a></li>
+			<li><a class="btn btn-pill" href="contact.html">Contact</a></li>
+		  </ul>
+		  <ul class="social-links">
+			<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+			<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+			<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+		  </ul>
+		  <img src="img/img1.png" alt="" class="footer-image">
+		</div>
+	  </footer>
+	  
+  <script src="JS/script_i.js"></script>
+    <!-- Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+	<!-- Custom JS -->
+	<script>
+	  $(document).ready(function() {
+		// Add background animation
+		$(".hero").addClass("animated-background");
+  
+		// Card click animation
+		$(".destinations .card").click(function() {
+		  $(this).addClass("animated-card");
+		});
+  
+		// Button click animation
+		$(".btn-primary").click(function() {
+		  $(this).addClass("animated-button");
+		});
+	  });
+	</script>
+</body>
+</html>

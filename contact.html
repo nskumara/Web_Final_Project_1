@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tourism Website - Destinations</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <!-- Animate CSS animate.style.com-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<style>
+
+body{
+  height: 100vh;
+  background: linear-gradient(
+    to right,
+    #DBF1F7 0%,
+    #DBF1F7 40%,
+    white 40%,
+    white 100%); 
+}
+
+.temp1 {
+	padding-left: 15px;
+	padding-right: 15px;
+	transition: 1s;
+}
+
+.temp1:hover {
+	transform:scale(1.1);
+	z-index:2;
+}
+
+
+.img1{
+	width: 100%;
+	margin-top:150px;
+	max-height: 500px;
+	border-radius: 0 15px 0 15px;
+	box-shadow: 6px 8px 25px -3px #30ADD0;
+}
+
+.img2{
+	width: 100%;
+	margin-top:60px;
+	max-height: 500px;
+	border-radius: 0 15px 0 15px;
+	box-shadow: 6px 8px 25px -3px #30ADD0;
+}
+ 
+.container{
+	position: relative;
+    z-index: 999;
+	max-height: 550px;
+}
+
+
+.container2{
+	padding: 60px 60px 30px 60px; /*top right bottom left*/
+    min-height: 41vh;
+    width: 100%;
+    /*margin: 2rem auto;*/
+	display: flex;
+	justify-content: center;
+
+}
+
+.box{
+	height:415px;
+	/*border: 2px solid aqua;*/
+	width: 170px;
+}
+
+.box3{
+	height:560px;
+	width: 370px;
+}
+
+.title1{
+	text-align:center;
+	font-family: 'Oswald', sans-serif;
+	font-size:6rem;
+	color:#30ADD0;
+	padding-left: 20px;
+	padding-top: 35px;
+}
+
+
+.ele2{
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+	text-align: justify;
+	padding-top: 10px;
+}
+
+.n-text{
+	font-weight: 485;
+	text-align: justify;
+}
+
+.btn-primary {
+    color: #fff;!important;
+    background-color: #30ADD0;!important;
+    border-color: #30ADD0;!important;
+}
+
+/*.content1-contact-map{
+  padding: 2px;
+  margin-left: -20px;
+  width: 325px;
+}*/
+
+.content1-contact-info{
+	font-size:0.8rem;
+	font-weight: 600;
+	text-align: justify;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+	text-align: center;
+	padding-top: 40px;
+}
+
+.information-box-inner0{
+	background-color: white;
+	padding:15px 7px 5px 15px;
+	border-radius: 0 15px 0 15px;
+	box-shadow: 6px 8px 25px -3px #30ADD0;
+	width:64%;
+	opacity: 0.8;
+	margin-left: 18%;
+    margin-top: -4%;
+}
+
+.information-box-inner1{
+	background-color: white;
+	padding:15px 7px 5px 15px;
+	border-radius: 0 15px 0 15px;
+	box-shadow: 6px 8px 25px -3px #30ADD0;
+	width:63%;
+	opacity: 0.8;
+	margin-left: 37%;
+	margin-top: -75px;
+}
+
+.information-box-inner2{
+	background-color: white;
+	padding:15px 7px 5px 15px;
+	border-radius: 0 15px 0 15px;
+	box-shadow: 6px 8px 25px -3px #30ADD0;
+	width:64%;
+	opacity: 0.8;
+	margin-left: -1%;
+	margin-top: -75px;
+}
+
+.dancer-image{
+    width: 130%;
+    /* max-height: 18%; */
+    /* padding: 20px; */
+    margin-top: -222px;
+    right: 0px;
+    filter: opacity(0.6);
+}
+
+.container4 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 35px;
+}
+
+.con-box {
+	width:80%;
+	/*border: 2px solid aqua;*/
+	padding: 0px 0px 0px 25px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.contact-details-h1{
+	text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    color: #30ADD0;
+    padding-left: 20px;
+    padding-top: 35px;
+}
+
+/*------------------------------------*/
+
+@media (max-width: 575px) {
+
+body{
+  height: 100vh;
+  background: linear-gradient(
+    to right,
+    #DBF1F7 0%,
+    #DBF1F7 40%,
+    white 40%,
+    white 100%); 
+}
+
+.img1{
+	width: 100%;
+	padding-top:50px;
+	max-height: 500px;
+}
+
+.img2{
+	width: 100%;
+	padding-top:50px;
+	max-height: 500px;
+	
+}
+ 
+.container{
+	position: relative;
+    z-index: 999;
+	max-height: 550px;
+}
+
+
+.container2{
+	padding: 60px 60px 30px 60px; /*top right bottom left*/
+    min-height: 41vh;
+    width: 100%;
+    /*margin: 2rem auto;*/
+	/*display: flex;*/
+	justify-content: center;
+
+}
+
+.box{
+	height:175px;
+	/*border: 2px solid aqua;*/
+	width: 370px;
+	top: 1400px
+}
+
+.box3{
+	/*height:1100px;*/
+	width: 370px;
+}
+
+.title1{
+	text-align:center;
+	font-family: 'Oswald', sans-serif;
+	font-size:3rem;
+	color:#30ADD0;
+	padding-left: 20px;
+	padding-top: 35px;
+}
+	
+.col-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+	
+.ele2{
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+	text-align: justify;
+	padding-top: 10px;
+	font-size: 0.8rem
+	
+}
+ 
+/*------------------------------------*/
+  
+ </style>
+ 
+<body>
+
+  
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #fff;">
+  <div class="container-fluid">
+    <img src="img/Flag_map_of_Sri_Lanka.svg" alt="" width="100px" height="70px"><br><img src="img/logo-no-background.svg" alt="" width="300px" height="100px"><!--<span style="color:#0000FF">SRI</span><span style="color:#00FF00"> LANKAN</span><span style="color:#FF0000"> GUIDE</span>-->
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link btn btn-pill" href="index.html" data-toggle="tooltip" data-placement="bottom" title="Home" data-animation="fadeIn">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-pill" href="destination.html" data-toggle="tooltip" data-placement="bottom" title="Destinations" data-animation="fadeIn">Destinations</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link btn btn-pill" href="history.html" data-toggle="tooltip" data-placement="bottom" title="History" data-animation="fadeIn">History</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link btn btn-pill" href="videos.html" data-toggle="tooltip" data-placement="bottom" title="Videos" data-animation="fadeIn">Videos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-pill" href="about.html" data-toggle="tooltip" data-placement="bottom" title="About" data-animation="fadeIn">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-pill" href="contact.html" data-toggle="tooltip" data-placement="bottom" title="Contact" data-animation="fadeIn">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="Layout-main">
+
+<!-- Photos Grid-->
+<div class="container">
+	<div class="row position-relative">
+		<div class="col-md-3 temp1">
+		<img src="img/history/h_img1.jpg" class="img1">
+		</div> 
+		
+		<div class="col-md-3 temp1">
+		<img src="img/history/h_img2.jpg" class="img2">
+		</div> 
+		
+		<div class="col-md-3 temp1">
+		<img src="img/history/h_img3.jpg" class="img1">
+		</div> 
+		
+		<div class="col-md-3 temp1">
+		<img src="img/history/h_img4.jpg" class="img2">
+		</div> 
+	</div> 
+</div>
+
+<!-- layout -->
+
+ <div class="container2">
+    <div class="layout-left">
+	<div class="row position-relative">
+        <div class="row">	  
+			<div class="col-6 box ele1">
+				<h1 class="title1 animate__animated animate__pulse" >Make Us Contact</h1>
+			</div>
+			<div class="col-6 box ele2">
+				<p class="ele2" >Get in Touch with Us,
+				<br>
+				<br>
+				Have a question, suggestion, or just want to share your Sri Lankan travel experiences? We'd love to hear from you! Use the contact form below to reach out, and our friendly team will get back to you soon. 
+				<br>
+				<br>			
+				Your feedback is essential in helping us create a memorable and fulfilling experience for all travelers exploring the beauty of Sri Lanka. Let's connect and embark on an unforgettable journey together!</p>
+			</div>
+			<div class="col-5 box3 box4-1  ele3">
+				<div class="dancer-image temp1">
+				<img src="img/dancer.png">
+				</div>
+			</div>
+			<div class="col-7 box3 box4-2 ele3">
+				<div class="content1-contact mt-5" >
+				<form>
+					<div class="form-group">
+						<label for="name">Name</label>
+						<input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+					</div>
+					<div class="form-group">
+						<label for="email">Email address</label>
+					<input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+					</div>
+					<div class="form-group">
+						<label for="subject">Subject</label>
+						<select class="form-control" id="subject" required>
+							<option value="" selected disabled>Select a subject</option>
+							<option value="General Inquiry">General Inquiry</option>
+							<option value="General Inquiry">Complain</option>
+							<option value="General Inquiry">Suggestion</option>
+							<option value="Advertising">Advertising</option>
+							<option value="Partnership">Partnership</option>
+							<option value="General Inquiry">Share Experience</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="message">Message</label>
+						<textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
+					</div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+
+<!--Contact Details-->
+<div class="container3">
+	<div class="col con-de">
+		<h2 class="contact-details-h1">Contact Details</h2>
+	</div>
+</div>
+<div class="container4">
+    <div class="row">
+	    <div class="col-md-12 con-box">
+			<div class="content1-contact-info mt-5" >
+				<div class="information-box-inner0 temp1">
+					<h2 style="color: #0072bc; font-size: 45px; text-align: center"><i class="fa fa-phone"></i> DIAL 1912</h2>
+					<p style="margin-bottom: 0rem">DIAL 1912 from any phone within Sri Lanka to access tourism Information</p>
+					<br>
+					<p style="color: #0072bc; margin-bottom: 0rem">Sri Lanka Tourism Head Office</p>
+					<br>
+					<tr>
+                        <td><i class="fa fa-phone"></i></td>
+                        <td>+94 112 426900</td>
+                    </tr>
+					<br>
+					<tr>
+                        <td><i class="fa fa-fax"></i></td>
+                        <td>+94 112 440001 / 2426984</td>
+                    </tr>
+					<br>
+					<tr>
+                        <td><i class="fa fa-map-marker"></i></td>
+                        <td>No. 80, Galle Road, Colombo 03, Sri Lanka.</td>
+                    </tr>
+				</div>
+			</div>
+		</div>
+        <div class="col-md-6 con-box">
+			<div class="content1-contact-info mt-5" >
+				<div class="information-box-inner1 temp1">
+					<p style="color: #0072bc; margin-bottom: 0rem">Sri Lanka Tourism Promotion Bureau</p>
+					<br>
+					<tr>
+                        <td><i class="fa fa-phone"></i></td>
+                        <td>+94 112 426900</td>
+                    </tr>
+					<br>
+					<tr>
+                        <td><i class="fa fa-fax"></i></td>
+                        <td>+94 112 440001</td>
+                    </tr>				
+				</div>
+			</div>
+		</div>			
+        <div class="col-md-6 con-box">
+			<div class="content1-contact-info mt-5" >
+				<div class="information-box-inner2 temp1">
+					<p style="color: #0072bc; margin-bottom: 0rem">Sri Lanka Tourism Development Authority</p>
+					<br>
+					<tr>
+                        <td><i class="fa fa-phone"></i></td>
+                        <td>+94 112426902</td>
+                    </tr>
+					<br>
+					<tr>
+                        <td><i class="fa fa-fax"></i></td>
+                        <td>+94 112 440003</td>
+                    </tr>
+					<br>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container text-center">
+      <ul class="footer-links">
+			<li><a class="btn btn-pill" href="index.html">Home</a></li>
+			<li><a class="btn btn-pill" href="destination.html">Destinations</a></li>
+			<li><a class="btn btn-pill" href="videos.html">Videos</a></li>
+			<li><a class="btn btn-pill" href="history.html">History</a></li>
+			<li><a class="btn btn-pill" href="about.html">About Us</a></li>
+			<li><a class="btn btn-pill" href="contact.html">Contact</a></li>
+      </ul>
+      <ul class="social-links">
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+      </ul>
+      <img src="img/img1.png" alt="" class="footer-image">
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Custom JS -->
+  <script>
+    $(document).ready(function() {
+      // Add background animation
+      $(".hero").addClass("animated-background");
+
+      // Card click animation
+      $(".destinations .card").click(function() {
+        $(this).addClass("animated-card");
+      });
+
+      // Button click animation
+      $(".btn-primary").click(function() {
+        $(this).addClass("animated-button");
+      });
+    });
+	
+	  <!-- Custom JS ToogleButton---->
+  
+</body>
+</html>
